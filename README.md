@@ -1,34 +1,23 @@
-# CSC 202 HEALTH CLINIC QUEUE MANAGER
+6️⃣ README.md (IMPORTANT FOR MARKS)
+# Mini CBT Web App
 
-# Health Clinic Queue Manager
+## What this app does
+This is a simple Computer-Based Test (CBT) system built with Flask.
+Users can answer questions and see their score with a timestamp.
 
-This project is a Flask web application that manages a clinic patient queue.
+## Features
+- OOP (Question & Result classes)
+- Stack (stores result history)
+- Flask web app with 3 pages
+- Timestamp using datetime
 
-Features:
-- Register patients
-- View waiting list
-- Serve patients in FIFO order
-- Track number of patients served
-- Timestamp when patients register
+## How to run
 
-Technologies:
-- Python
-- Flask
-- HTML
-
-How to Run:
-
-1 Install Python
-
-2 Install Flask
-
+1. Install Flask:
 pip install flask
 
-3 Run the application
-
+2. Run the app:
 python app.py
 
-4 Open browser
-
-http://127.0.0.1:5000
-
+3. Open browser:
+http://127.0.0.1:5000/
