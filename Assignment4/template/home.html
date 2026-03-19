@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Queue Manager</title>
+</head>
+
+<body>
+
+<h1>Health Clinic Queue Manager</h1>
+
+<hr>
+
+<a href="register.html">Register New Patient</a>
+<br><br>
+
+<a href="/serve">Serve Next Patient</a>
+
+<hr>
+
+<h2>Current Waiting List</h2>
+
+{% if queue %}
+<ol>
+    {% for patient in queue %}
+    <li>
+        <strong>{{ patient.name }}</strong> |
+        Age: {{ patient.age }} |
+        Problem: {{ patient.problem }} |
+        Time: {{ patient.time_registered }}
+    </li>
+    {% endfor %}
+</ol>
+{% else %}
+<p>No patients in queue.</p>{% endif %}
+
+<hr>
+
+<h3>Total Patients Served Today: {{ served }}</h3>
+
+</body>
+</html>
