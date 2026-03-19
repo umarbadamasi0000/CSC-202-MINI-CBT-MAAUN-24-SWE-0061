@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h1>Register New Patient</h1>
+    <form method="POST" class="form">
+        <label>Patient Name</label>
+        <input type="text" name="name" required>
+
+        <label>Age</label>
+        <input type="number" name="age" required>
+
+        <label>Health Problem</label>
+        <input type="text" name="problem" required>
+
+        <button class="btn" type="submit">Register Patient</button>
+    </form>
+
+    <a class="link" href="/">Back to Home</a>
+</div>
+
+{% endblock %}
