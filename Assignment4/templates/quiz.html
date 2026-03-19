@@ -1,0 +1,28 @@
+4️⃣ templates/quiz.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+
+<h2>Answer the questions</h2>
+
+<form action="/submit" method="POST">
+
+    {% for question in questions %}
+        <p>{{ question.text }}</p>
+
+        {% for option in question.options %}
+            <input type="radio" name="q{{ loop.index0 }}" value="{{ option }}" required>
+            {{ option }} <br>
+        {% endfor %}
+    {% endfor %}
+
+    <br>
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
