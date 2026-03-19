@@ -1,5 +1,5 @@
 
-from app import app
+from datetime import datetime
 
 class Question:
     def __init__(self, text, options, correct_answer):
