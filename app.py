@@ -1,8 +1,7 @@
-2️⃣ app.py (Flask + Logic)
 from flask import Flask, render_template, request
 from models import Question, Result
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='Assignment4/templates')
 
 # Questions (OOP objects, not dictionaries)
 questions = [
